@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clone kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="result">
+        </div>
+        <div class="input-hasil">
+            <input type="number" class="input-calc" value="0">
+            <div class="tempt-operator"></div>
+        </div>
+
+        <div class="main">
+            <div class="left">
+                <div class="delete-calc">
+                    <button type="button" class="clear">C</button>
+                    <button type="button" class="delete-all">Ce</button>
+                    <button type="button" class="delete"><-</button>
+                </div>
+                <div class="number-calc">
+                    <script>
+                        for(let i = 1; i <= 9; i++) {
+                            document.write(`<button type='button' class='number'>${i}</button>`);
+                        }
+                    </script>
+                    <button type="button" class="number">0</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="operator">
+                    <button type="button" class="tambah">+</button>
+                    <button type="button" class="kurang">-</button>
+                    <button type="button" class="kali">*</button>
+                    <button type="button" class="bagi">/</button>
+                </div>
+                <button type="button" class="hasil">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

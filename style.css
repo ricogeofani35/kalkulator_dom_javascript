@@ -1,0 +1,75 @@
+.container {
+    background-color: #ccc;
+    padding: 20px 10px;
+    border-radius: 5px;
+    margin: 30px auto;
+    width: 350px;
+    box-shadow: 1px 1px 4px #000;
+}
+.container .result {
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 5px;
+    padding: 5px 20px;
+    text-align: right;
+    display: none;
+}
+.container .input-hasil {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+.input-hasil .tempt-operator {
+    background-color: gray;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 10px;
+    height: 33px;
+    border-radius: 3px;
+    border: 1px solid orange;
+    font-weight: bold;
+    box-sizing: border-box;
+    display: none;
+}
+.container .input-calc {
+    width: 100%;
+    border: none;
+    outline: 1px solid orange;
+    padding: 6px 10px;
+    font-size: 17px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+.container .main {
+    display: flex;
+    gap: 25px;
+}
+.container .main .left {
+    width: 80%;
+}
+.container button {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.container button:hover {
+    opacity: .6;
+}
+
+.container .operator button {
+    width: 80%;
+}
+.container .right {
+    display: flex;
+}
+.right .hasil {
+    width: 100%;
+}
